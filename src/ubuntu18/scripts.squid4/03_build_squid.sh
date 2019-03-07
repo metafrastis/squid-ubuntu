@@ -25,6 +25,9 @@ wget http://http.debian.net/debian/pool/main/s/squid/squid_${SQUID_PKG}.dsc
 wget http://http.debian.net/debian/pool/main/s/squid/squid_${SQUID_VER}.orig.tar.gz
 wget http://http.debian.net/debian/pool/main/s/squid/squid_${SQUID_PKG}.debian.tar.xz
 
+# install debian-keyring
+apt-get install -y debian-keyring
+
 # unpack the source package
 dpkg-source -x squid_${SQUID_PKG}.dsc
 
