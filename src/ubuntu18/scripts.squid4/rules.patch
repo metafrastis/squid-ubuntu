@@ -1,9 +1,10 @@
---- rules	2018-01-23 10:39:24.000000000 +0100
-+++ rules.new	2018-02-07 22:07:59.285432839 +0100
-@@ -30,6 +30,9 @@
+--- rules	2019-03-07 00:55:37.589057849 +0000
++++ rules.new	2019-03-07 01:05:54.002967966 +0000
+@@ -41,6 +41,10 @@
  		--enable-delay-pools \
  		--enable-cache-digests \
  		--enable-icap-client \
++		CXXFLAGS="-DMAXTCPLISTENPORTS=65500" \
 +		--enable-ssl \
 +		--enable-ssl-crtd \
 +		--with-openssl \
